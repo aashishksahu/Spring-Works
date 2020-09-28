@@ -25,5 +25,9 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * `@Controller` - used to define a java class as a servlet spring bean
 * `@Service` - used to define a java class as a stand-alone business spring bean with the business logic or algorithm
 * `@Repository` - used to define a java class as spring bean that performs persistence and CRUD operations on objects
+* `@Autowired` - Whatever goes below this annotation (Constructor or Setter preferably) is the point where a dependency is to be injected
 * `@Qualifier` - When there are multiple implementations of an interface and spring can't decide which one to use then we can use the `@Qualifier([bean name])` to specify which bean to use
 * `@Primary` - this annotation marks a bean as a default bean to be injected, If no Qualifier is assigned then this'll run by default
+
+### Examples
+* [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/src/main/java/com/andromeda/basicDI)
