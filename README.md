@@ -7,7 +7,9 @@
 
 - [Spring Notes](#spring-notes)
     + [Basic Definitions](#basic-definitions)
+    + [Build Tool](#build-tool)
     + [Annotations](#annotations)
+    + [Examples](#examples)
 
 ### Basic Definitions
 * **Application context** is a container that is used by spring to store all the beans.
@@ -19,6 +21,11 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * **Inversion of Control** means reversing the flow of control of the application. Instead of the programmer controlling everything from business logic to runtime environment, the application controls how the runtime works while the programmer works on the important parts and add those parts to the existing application. In simple words, 
 
 > Don't build an application just to run your business logic, build the business logic and let the application run it for you
+
+### Build Tool
+* A **build tool** or build automation tool is a software that automates the process of compiling and running an application. A build tool can be used for building, testing, generating documentation and managing dependencies for the project. 
+
+* **Gradle** is a java build tool that runs on Groovy scripting language which is a JVM based scripting language. It is less verbose than Maven, does not depend on XML, can run Groovy tasks and is highly configurable.
 
 ### Annotations
 * `@Component` - used to define a java class as a basic spring bean
