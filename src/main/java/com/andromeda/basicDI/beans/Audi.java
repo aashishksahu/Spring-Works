@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class Audi implements Car {
 
 	@Override
-	public String carName() {
+	public String name() {
 		return "Audi";
 	}
 

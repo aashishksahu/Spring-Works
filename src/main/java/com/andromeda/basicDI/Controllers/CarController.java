@@ -28,7 +28,7 @@ public class CarController {
 	}
 
 	public String getCarName() {
-		return this.newCar.carName();
+		return this.newCar.name();
 	}
 
 }
