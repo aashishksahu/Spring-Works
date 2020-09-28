@@ -25,7 +25,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 ### Build Tool
 * A **build tool** or build automation tool is a software that automates the process of compiling and running an application. A build tool can be used for building, testing, generating documentation and managing dependencies for the project. 
 
-* **Gradle** is a java build tool that runs on Groovy scripting language which is a JVM based scripting language. It is less verbose than Maven, does not depend on XML, can run Groovy tasks and is highly configurable.
+* **Gradle** is a java build tool that runs on Groovy scripting language which is a JVM based scripting language. Gradle is less verbose than Maven, does not depend on XML, can run Groovy tasks and is highly configurable.
 
 ### Annotations
 * `@Component` - used to define a java class as a basic spring bean
