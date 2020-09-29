@@ -37,4 +37,4 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * `@Primary` - this annotation marks a bean as a default bean to be injected, If no Qualifier is assigned then this'll run by default
 
 ### Examples
-* [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/src/main/java/com/andromeda/basicDI)
+* [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Core-DI/src/main/java/com/andromeda/basicDI)
