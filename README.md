@@ -8,7 +8,7 @@
 - [Spring Notes](#spring-notes)
     + [Basic Definitions](#basic-definitions)
     + [Build Tool](#build-tool)
-    + [Annotations](#annotations)
+    + [Commonly Used Annotations](#commonly-used-annotations)
     + [Examples](#examples)
 
 ### Basic Definitions
@@ -31,7 +31,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 
 * **Maven** is another build tool that uses a POM.xml to manage all the dependencies and project metadata. It is older and more mature build automation tool than gradle and has better community support and IDE integration.
 
-### Annotations
+### Commonly Used Annotations
 #### Core
 * `@Component` - used to define a java class as a basic spring bean
 * `@Service` - used to define a java class as a stand-alone business spring bean with the business logic or algorithm
