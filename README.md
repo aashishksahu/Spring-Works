@@ -32,7 +32,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * **Maven** is another build tool that uses a POM.xml to manage all the dependencies and project metadata. It is older and more mature build automation tool than gradle and has better community support and IDE integration.
 
 ### Annotations
-### Core
+#### Core
 * `@Component` - used to define a java class as a basic spring bean
 * `@Service` - used to define a java class as a stand-alone business spring bean with the business logic or algorithm
 * `@Repository` - used to define a java class as spring bean that performs persistence and CRUD operations on objects
@@ -40,7 +40,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * `@Qualifier` - When there are multiple implementations of an interface and spring can't decide which one to use then we can use the `@Qualifier([bean name])` to specify which bean to use
 * `@Primary` - this annotation marks a bean as a default bean to be injected, If no Qualifier is assigned then this'll run by default
 
-### Web
+#### Web
 * `@Controller` - used to define a java class as a servlet spring bean
 * `@RequestMapping("/demo")` - used to mark a class where a specific request is to be send. Here all the requests from `http://<address>:<port>/demo` will go to this class
 * `@GetMapping(path = "/all")` - map a get request to a method 
@@ -48,7 +48,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 * `@RequestParam("queryTerm")` - `http://<domain-name>.com?queryTerm=<searchTerm>` this annotation sends a query parameter (here, `searchTerm`) with the request which can be used to search the database.
 * `@ResponseBody` - Annotation that indicates a method return value should be bound to the response body
 
-### Data
+#### Data
 * `@Entity` - Entity is a JPA POJO class which is used to map a relation to an object. In ELI5 words, entity should be a POJO class that exactly resembles the relation (entity = `desc <table-name>`).
 * `@Repository` - A repository is an interface which extends the `CrudRepository` interface. A repository contains methods for performing CRUD operations, sorting and paginating data.
 
