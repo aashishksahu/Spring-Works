@@ -22,19 +22,35 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 
 > Don't build an application just to run your business logic, build the business logic and let the application run it for you
 
+* **JPA** - Java Persistence API is a Java EE specification which is implemented by Spring data JPA and others like Hibernate. JPA provides an abstraction over the JDBC API and hides the inner workings of JDBC such as Connection establishment, PreparedStatement calls, ResultSet creation etc. It implements Object-Relational Mapping (ORM) which in basic terms means mapping records from a relation to a POJO. **Spring Data JPA** also provides the means to define custom methods inside the Repository interface which can be parsed and used accordingly. Eg:- `public Iterable<Dummy> findAllByName(String name);` is a method and `findAllByName` will be parsed by JPA to create a SQL query that'll search the relation by name.
+
 ### Build Tool
 * A **build tool** or build automation tool is a software that automates the process of compiling and running an application. A build tool can be used for building, testing, generating documentation and managing dependencies for the project. 
 
 * **Gradle** is a java build tool that runs on Groovy scripting language which is a JVM based scripting language. Gradle is less verbose than Maven, does not depend on XML, can run Groovy tasks and is highly configurable.
 
+* **Maven** is another build tool that uses a POM.xml to manage all the dependencies and project metadata. It is older and more mature build automation tool than gradle and has better community support and IDE integration.
+
 ### Annotations
+### Core
 * `@Component` - used to define a java class as a basic spring bean
-* `@Controller` - used to define a java class as a servlet spring bean
 * `@Service` - used to define a java class as a stand-alone business spring bean with the business logic or algorithm
 * `@Repository` - used to define a java class as spring bean that performs persistence and CRUD operations on objects
 * `@Autowired` - Whatever goes below this annotation (Constructor or Setter preferably) is the point where a dependency is to be injected
 * `@Qualifier` - When there are multiple implementations of an interface and spring can't decide which one to use then we can use the `@Qualifier([bean name])` to specify which bean to use
 * `@Primary` - this annotation marks a bean as a default bean to be injected, If no Qualifier is assigned then this'll run by default
+
+### Web
+* `@Controller` - used to define a java class as a servlet spring bean
+* `@RequestMapping("/demo")` - used to mark a class where a specific request is to be send. Here all the requests from `http://<address>:<port>/demo` will go to this class
+* `@GetMapping(path = "/all")` - map a get request to a method 
+* `@PostMapping(path = "/add")` - map a post request to a method
+* `@RequestParam("queryTerm")` - `http://<domain-name>.com?queryTerm=<searchTerm>` this annotation sends a query parameter (here, `searchTerm`) with the request which can be used to search the database.
+* `@ResponseBody` - Annotation that indicates a method return value should be bound to the response body
+
+### Data
+* `@Entity` - Entity is a JPA POJO class which is used to map a relation to an object. In ELI5 words, entity should be a POJO class that exactly resembles the relation (entity = `desc <table-name>`).
+* `@Repository` - A repository is an interface which extends the `CrudRepository` interface. A repository contains methods for performing CRUD operations, sorting and paginating data.
 
 ### Examples
 * [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Core-DI/src/main/java/com/andromeda/basicDI)
