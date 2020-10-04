@@ -54,3 +54,4 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 
 ### Examples
 * [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Core-DI/src/main/java/com/andromeda/basicDI)
+* [Spring Data JPA using Oracle 11g Express Edition](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Data-Demo/src/main/java/com/workGroup) 
