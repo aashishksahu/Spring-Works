@@ -22,7 +22,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 
 > Don't build an application just to run your business logic, build the business logic and let the application run it for you
 
-* **JPA** - Java Persistence API is a Java EE specification which is implemented by Spring data JPA and others like Hibernate. JPA provides an abstraction over the JDBC API and hides the inner workings of JDBC such as Connection establishment, PreparedStatement calls, ResultSet creation etc. It implements Object-Relational Mapping (ORM) which in basic terms means mapping records from a relation to a POJO. **Spring Data JPA** also provides the means to define custom methods inside the Repository interface which can be parsed and used accordingly. Eg:- `public Iterable<Dummy> findAllByName(String name);` is a method and `findAllByName` will be parsed by JPA to create a SQL query that'll search the relation by name.
+* **JPA** - Java Persistence API is a Java EE specification which is implemented by Hibernate.It provides an abstraction over the JDBC API and hides the inner workings of JDBC such as Connection establishment, PreparedStatement calls, ResultSet creation etc. It implements Object-Relational Mapping (ORM) which in basic terms means mapping records from a relation to a POJO. **Spring Data JPA** is an JPA data access abstraction that provides the means to define custom methods inside the Repository interface which can be parsed and used accordingly. Eg:- `public Iterable<Dummy> findAllByName(String name);` is a method and `findAllByName` will be parsed by JPA to create a SQL query that'll search the relation by name.
 
 ### Build Tool
 * A **build tool** or build automation tool is a software that automates the process of compiling and running an application. A build tool can be used for building, testing, generating documentation and managing dependencies for the project. 
@@ -55,3 +55,7 @@ then, instead of defining an implementation of Car such as Audi or Maserati insi
 ### Examples
 * [Dependency Injection](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Core-DI/src/main/java/com/andromeda/basicDI)
 * [Spring Data JPA using Oracle 11g Express Edition](https://github.com/aashishksahu/Spring-Works/tree/master/Spring-Data-Demo/src/main/java/com/workGroup) 
+
+### Useful Articles
+* [What is Object-Relational Mapping](http://hibernate.org/orm/what-is-an-orm/)
+* [Should I Or Should I Not Use ORM ?](https://medium.com/@mithunsasidharan/should-i-or-should-i-not-use-orm-4c3742a639ce)
